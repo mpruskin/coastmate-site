@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email confirmed - CoastMate&#8482;</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<script>
+/* Runs first. Sets the address bar to the path and query only, which drops the #fragment the confirmation link arrives with.
+   This page never reads, stores, logs, sends or shows the fragment: it does not touch location.hash. */
+history.replaceState(null, '', location.pathname + location.search);
+</script>
+<style>
+  :root { --ink: #0b1f44; --muted: #4a5a78; --line: #d5dbe6; --brand: #0b3b80; --brand-text: #ffffff; --bg: #f5f7fb; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #eef2fa; --muted: #aab6cd; --line: #2b3a5a; --brand: #ffd700; --brand-text: #001a4d; --bg: #001a4d; --card: #0b2a63; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; }
+  main { width: 100%; max-width: 440px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 32px 24px; text-align: center; }
+  .logo { display: block; width: 160px; max-width: 60%; height: auto; margin: 0 auto 24px; background: #ffffff; border-radius: 12px; }
+  h1 { margin: 0 0 12px; font-size: 1.5rem; line-height: 1.25; }
+  p { margin: 0 0 16px; font-size: 1.0625rem; }
+  .button { display: block; width: 100%; min-height: 52px; padding: 14px 20px; margin: 24px 0 16px; border-radius: 12px; background: var(--brand); color: var(--brand-text); font-size: 1.0625rem; font-weight: 700; text-decoration: none; }
+  .button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .note { margin: 0; color: var(--muted); font-size: 1rem; }
+  .footer { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; margin: 24px 0 0; padding: 16px 0 0; border-top: 1px solid var(--line); }
+  .footer a { color: var(--ink); font-size: 1rem; padding: 8px 4px; }
+  .footer a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  /* brand:css */
+  :root { --wm-coast: #012562; --wm-mate: #e0b400; }
+  @media (prefers-color-scheme: dark) { :root { --wm-coast: #ffffff; --wm-mate: #ffd700; } }
+  .brand-head { display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 0 0 24px; }
+  .brand-head .logo { margin: 0; }
+  .wordmark { margin: 0; font-size: 2.25rem; line-height: 1.1; font-weight: 800; letter-spacing: 0.2px; color: var(--wm-coast); text-align: center; }
+  .wordmark .mate { color: var(--wm-mate); }
+  .wordmark .wm-mark { font-size: 0.32em; font-weight: 600; line-height: 0; position: relative; top: -1.52em; margin-left: 2px; }
+  sup.tm { font-size: 0.55em; font-weight: 600; line-height: 0; margin-left: 1px; }
+  /* /brand:css */
+</style>
+</head>
+<body>
+<main>
+  <!-- brand:header -->
+  <div class="brand-head">
+    <img class="logo" alt="" width="160" height="148" src="assets/logo.png">
+    <p class="wordmark" role="img" aria-label="CoastMate">Coast<span class="mate">Mate</span><span class="wm-mark" aria-hidden="true">&#8482;</span></p>
+  </div>
+  <!-- /brand:header -->
+  <h1>Email confirmed</h1>
+  <p>Your email address is confirmed. Return to the app to continue.</p>
+  <a class="button" href="coastmate://">Open CoastMate<sup class="tm">&#8482;</sup></a>
+  <p class="note">If the app does not open, open CoastMate<sup class="tm">&#8482;</sup>.</p>
+  <nav class="footer" aria-label="Privacy, terms and support"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</main>
+</body>
+</html>
